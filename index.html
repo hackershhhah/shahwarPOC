@@ -4,34 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subdomain Takeover PoC</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 50px;
+            padding: 0;
+            background-color: #0b0f14;
+            color: #00ff9c;
+            font-family: "Courier New", Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
+
+        .container {
+            text-align: center;
+            border: 1px solid #00ff9c;
+            padding: 40px;
+            max-width: 700px;
+            box-shadow: 0 0 20px rgba(0, 255, 156, 0.3);
+        }
+
         h1 {
-            color: #e74c3c;
+            color: #ff4757;
+            margin-bottom: 20px;
+            font-size: 26px;
+            text-transform: uppercase;
         }
+
         p {
-            color: #2c3e50;
+            font-size: 16px;
+            line-height: 1.6;
         }
+
+        .name {
+            color: #1e90ff;
+            font-weight: bold;
+        }
+
+        .terminal {
+            margin-top: 25px;
+            background-color: #020409;
+            padding: 15px;
+            border: 1px dashed #00ff9c;
+            text-align: left;
+            font-size: 14px;
+        }
+
         .footer {
-            margin-top: 50px;
-            font-size: 0.8em;
-            color: #7f8c8d;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #7bed9f;
         }
     </style>
 </head>
 <body>
-    <h1>Subdomain Takeover Proof of Concept</h1>
-    <p>This subdomain has been claimed by  syedshahwar_shah.</p>
-    <p></p>
-    <div class="footer">
-        <p></p>
-        <p></p>
+
+    <div class="container">
+        <h1>Subdomain Takeover</h1>
+
+        <p>
+            This subdomain has been successfully claimed as a
+            <strong>Proof of Concept</strong>.
+        </p>
+
+        <p>
+            Controlled by <span class="name">shahwar-shah</span>
+        </p>
+
+        <div class="terminal">
+            $ whoami<br>
+            shahwar-shah<br><br>
+            $ status<br>
+            takeover_confirmed = true
+        </div>
+
+        <div class="footer">
+            <p>Security Research • Responsible Disclosure</p>
+        </div>
     </div>
+
 </body>
 </html>
